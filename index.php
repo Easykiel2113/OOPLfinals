@@ -1,32 +1,4 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Easykiel2113 
-Easykiel2113
-/
-OOPLmidterm
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-OOPLmidterm/s.php /
-@Easykiel2113
-Easykiel2113 i
-Latest commit 513a490 on Nov 20, 2021
- History
- 1 contributor
-137 lines (106 sloc)  3.07 KB
-   
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
