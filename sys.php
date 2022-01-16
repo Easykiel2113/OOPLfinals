@@ -79,7 +79,7 @@ class info4 extends generalinfo  implements Patient {
 
 
 
-$Info = new info(' Hyvor ',12 ,' male ',' Abucay, Bataan');
+$Info = new info(' Hyvor  ',12 ,' male ',' Abucay, Bataan');
 echo "Date of consultation:   " . date("m/d/y") . "<br>";
 echo "Infomation:". "<br>";
 $Info -> GeneralInfo();
