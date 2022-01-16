@@ -71,7 +71,7 @@ class info3 extends generalinfo  implements Patient {
 }
 class info4 extends generalinfo  implements Patient {
 	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.' Address: '. $this -> address;
+		echo 'Name:'. $this -> name .'   '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.' Address: '. $this -> address;
 	  
 	
 	}
