@@ -11,132 +11,41 @@
 </head>
 <body>
 <?php
-Interface  Patient {
-	public function GeneralInfo();
 
-}
+class Clinic {
 
-class generalinfo {
-	public $name;
-	public $age;
-	public $gender;
-	public function __construct($name,$age,$gender,$address) {
-		$this -> name = $name;
-		$this -> age = $age;
-	    $this -> gender = $gender;
-		$this -> address = $address;
-	   
-	}
-}
-class Status {
-    public $status;
-    public function __construct($nurse){
-        $this -> status = $nurse;
+    private $name;
+    private $age;
+    private $gender;
+    private $address;
+    private $nurse;
+
+    function __construct($name,$age,$gender,$address,$nurse) {
+        $this->name = $name;
+        $this->age = $age;
+        $this->gender = $gender;
+        $this->address = $address;
+         $this->nurse = $nurse;
+    }
+
+    public function info() {
+        return "Name: " . $this->name . "<br>". "Age: ". $this->age . "<br>". "Gender: ".$this->gender .
+         "<br>"."Address: ".  $this->address . "<br>". "Nurse: " .  $this->nurse ;
     }
 }
 
-class sta extends Status implements Patient{
-    function GeneralInfo(){
-        echo 'Nurse:  '. $this -> status;
-    }
-}
-
-class info extends generalinfo  implements Patient {
-	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender.' '. ' Address: '. $this -> address ;
-	  
-	
-	}
-}
-class info1 extends generalinfo  implements Patient {
-	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.' Address: '.$this -> address;
-	  
-	
-	}
-}
-class info2 extends generalinfo  implements Patient {
-	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.' Address: '. $this -> address;
-	  
-	
-	}
-}
-class info3 extends generalinfo  implements Patient {
-	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'  '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.' Address: '. $this -> address;
-	  
-	
-	}
-}
-class info4 extends generalinfo  implements Patient {
-	function GeneralInfo() {
-		echo 'Name:'. $this -> name .'   '.' Age:'. $this -> age .' '. 'Gender:' . $this -> gender .' '.' Address: '. $this -> address;
-	  
-	
-	}
-}
-
-
-
-$Info = new info(' Hyvor  ',12 ,' male ',' Abucay, Bataan');
-echo "Date of consultation:   " . date("m/d/y") . "<br>";
-echo "Infomation:". "<br>";
-$Info -> GeneralInfo();
+$patient1 = new Clinic("Ezekiel",20,"Male","Samal, Bataan", "Joana Dela Cruz");
+echo $patient1->info();
 echo "<br>";
-$sta = new sta('James batong bakal');
-$sta ->GeneralInfo();
-echo "<br>";
-echo "<br>";
-echo "<br>";
-$Info = new info1(' Ezekiel ', 13 ,' male ',' Samal, Bataan');
 echo "Date of consultation:  " . date("m/d/y") . "<br>";
-echo "Infomation:". "<br>";
-$Info -> GeneralInfo();
-echo "<br>";
-$sta = new sta('Lebron batong bakal');
-$sta ->GeneralInfo();
-
-
 echo "<br>";
 echo "<br>";
+$patient2 = new Clinic("John Mark",21,"Male","Samal, Bataan","Juan Dela Cruz");
+echo $patient2->info();
 echo "<br>";
-$Info = new info2(' Tyron  ',18,' male ',' Orani, Bataan');
 echo "Date of consultation:  " . date("m/d/y") . "<br>";
-echo "Infomation:". "<br>";
-$Info -> GeneralInfo();
-echo "<br>";
-$sta = new sta('Wade batong bakal');
-$sta ->GeneralInfo();
-echo "<br>";
-echo "<br>";
-echo "<br>";
-
-
-$Info = new info3(' Diana rose ', 18,' female ',' Balanga City, Bataan');
-echo "Date of consultation:  " . date("m/d/y") . "<br>";
-echo "Infomation:". "<br>";
-$Info -> GeneralInfo();
-echo "<br>";
-$sta = new sta('Wong batong bakal');
-$sta ->GeneralInfo();
-echo "<br>";
-echo "<br>";
-echo "<br>";
-
-$Info = new info4(' kei ', 18,' female ',' Limay, Bataan');
-echo "Date of consultation:  " . date("m/d/y") . "<br>";
-echo "Infomation:". "<br>";
-$Info -> GeneralInfo();
-echo "<br>";
-$sta = new sta('Kyle batong bakal');
-$sta ->GeneralInfo();
-
-
-
 
 ?>
-
 
 </body>
 </html>
