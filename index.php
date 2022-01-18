@@ -10,7 +10,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(205,182,0,1) 0%, rgba
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report page</title>
+    <title>Clinic system information board</title>
 </head>
 <body>
     
