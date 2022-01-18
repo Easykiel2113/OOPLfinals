@@ -34,13 +34,13 @@ class Clinic {
     }
 }
 
-$patient1 = new Clinic("Ezekiel",20,"Male","Samal, Bataan", "Ms. Joana Dela Cruz");
+$patient1 = new Clinic("Ezekiel Ortiguerra",20,"Male","Samal, Bataan", "Ms. Joana Dela Cruz");
 echo $patient1->info();
 echo "<br>";
 echo "Date of consultation:  " . date("m/d/y") . "<br>";
 echo "<br>";
 echo "<br>";
-$patient2 = new Clinic("John Mark",21,"Male","Samal, Bataan","Mr. Juan Dela Cruz");
+$patient2 = new Clinic("John Mark Siasat",21,"Male","Samal, Bataan","Mr. Juan Dela Cruz");
 echo $patient2->info();
 echo "<br>";
 echo "Date of consultation:  " . date("m/d/y") . "<br>";
